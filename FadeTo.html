@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                $('#div1').fadeTo('2000',0.3)
+                $('#div2').fadeTo('2000',0.5)
+                $('#div3').fadeTo('2000',0.1)
+})
+        })
+    </script>
+    <style>
+        #div1{
+            background-color: yellow;
+        }
+        #div2{
+            background-color: blueviolet;
+        }
+        #div3{
+            background-color: orange;
+        }
+        #div1,#div2,#div3{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="btn">CLick On me</button>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+</body>
+</html>
